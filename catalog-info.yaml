@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: zpwf2r1fx-nodejs-gitops
+  description: This is GitOps manifest for zpwf2r1fx-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=zpwf2r1fx-nodejs
+    backstage.io/kubernetes-id: zpwf2r1fx-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: zpwf2r1fx-nodejs
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:zpwf2r1fx-nodejs

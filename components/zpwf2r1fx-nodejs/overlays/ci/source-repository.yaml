@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: zpwf2r1fx-nodejs-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/zpwf2r1fx-nodejs
